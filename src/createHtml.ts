@@ -62,8 +62,6 @@ export async function createHtml() {
       textDiv.appendChild(headerPlacement);
     }
   });
-
-  console.log(podCasts.programs);
   
 }
 
