@@ -1,13 +1,13 @@
 G
 
-- [ ] Få projektet att funka
+- [x] Få projektet att funka
 - [x] CSS till Sass
 - [x] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
-- [ ] Enhetlig kodkvalitet
-- [ ] Mobilvyn
-- [ ] Språk
-- [ ] Rensa loggning
+- [x] Enhetlig kodkvalitet
+- [x] Mobilvyn
+- [x] Språk
+- [x] Rensa loggning
 - [ ] Dokumentation
 - [ ] Tillgänglighet (bilder)
 - [ ] Refaktorera funktioner
