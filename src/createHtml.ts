@@ -1,6 +1,6 @@
 import { getPodcasts } from './api';
 
-const podCastContainer = document.querySelector('.section__podlist-pods');
+const podCastContainer = document.querySelector('.section__podlist_pods');
 
 let i = 0;
 
@@ -20,7 +20,7 @@ export async function createHtml() {
 
     function createInnerArticle() {
       const innerArticle = document.createElement('article');
-      innerArticle.setAttribute('class', 'section__article-innerarticle');
+      innerArticle.setAttribute('class', 'section__article_innerarticle');
       innerArticle.setAttribute('tabindex', '1');
       podCastContainer.appendChild(innerArticle);
       return innerArticle;
