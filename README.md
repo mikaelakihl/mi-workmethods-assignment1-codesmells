@@ -2,7 +2,7 @@ G
 
 - [ ] Få projektet att funka
 - [x] CSS till Sass
-- [ ] Enhetlig namngivning i CSS:en
+- [x] Enhetlig namngivning i CSS:en
 - [x] Konvertera till TypeScript
 - [ ] Enhetlig kodkvalitet
 - [ ] Mobilvyn

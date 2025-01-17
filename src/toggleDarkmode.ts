@@ -1,4 +1,4 @@
-const toggleLightModeButton = document.querySelector('.toggle-btn'); // Välj ljust läge knapp
+const toggleLightModeButton = document.querySelector('.toggle_btn'); // Välj ljust läge knapp
 
 toggleLightModeButton!.addEventListener('click', toggleLightMode);
 
