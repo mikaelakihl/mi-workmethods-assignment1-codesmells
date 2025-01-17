@@ -13,13 +13,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.section__article_innerarticle {
+.section_article_innerarticle {
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
 }
 
-.section__article-div {
+.section_article_div {
   display: inline-flex;
   flex-direction: column;
   margin-top: 0;
@@ -61,13 +61,13 @@ a:hover {
   color: rgb(85, 85, 218);
 }
 @media screen and (min-width: 1000px) {
-  .section__podlist_pods {
+  .section_podlist_pods {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1440px) {
-  .section__podlist_pods {
+  .section_podlist_pods {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
