@@ -2,12 +2,11 @@ import { getPodcasts } from './api';
 
 const podCastContainer = document.querySelector('.section_podlist_pods');
 
-let i = 0;
 
 export async function createHtml() {
   const podCasts = await getPodcasts();
-  podCasts.programs.forEach((podcast) => {
-    i++;
+  podCasts.programs.forEach((podcast: { programurl: string; socialimage: string; description: string; name: string; }) => {
+    
     const innerArticle = createInnerArticle();
 
     createImg();
@@ -22,7 +21,7 @@ export async function createHtml() {
       const innerArticle = document.createElement('article');
       innerArticle.setAttribute('class', 'section_article_innerarticle');
       innerArticle.setAttribute('tabindex', '1');
-      podCastContainer.appendChild(innerArticle);
+      podCastContainer!.appendChild(innerArticle);
       return innerArticle;
     }
 
@@ -36,14 +35,14 @@ export async function createHtml() {
     function createLink() {
       const linkPlacement = document.createElement('a');
       const linkText = document.createTextNode('Lyssna här');
-      linkPlacement.setAttribute('href', podCasts.programs[i].programurl);
+      linkPlacement.setAttribute('href', podcast.programurl);
       linkPlacement.setAttribute('tabindex', '1');
       linkPlacement.appendChild(linkText);
       textDiv.appendChild(linkPlacement);
     }
     function createImg() {
       const imgPlacement = document.createElement('IMG');
-      imgPlacement.setAttribute('src', podCasts.programs[i].socialimage);
+      imgPlacement.setAttribute('src', podcast.socialimage);
       imgPlacement.setAttribute('width', '100');
       imgPlacement.setAttribute('height', '100');
       innerArticle.appendChild(imgPlacement);
@@ -51,18 +50,21 @@ export async function createHtml() {
 
     function createP() {
       const descPlacement = document.createElement('p');
-      const desc = document.createTextNode(podCasts.programs[i].description);
+      const desc = document.createTextNode(podcast.description);
       descPlacement.appendChild(desc);
       textDiv.appendChild(descPlacement);
     }
 
     function createHeader() {
       const headerPlacement = document.createElement('h2');
-      const programName = document.createTextNode(podCasts.programs[i].name);
+      const programName = document.createTextNode(podcast.name);
       headerPlacement.appendChild(programName);
       textDiv.appendChild(headerPlacement);
     }
   });
+
+  console.log(podCasts.programs);
+  
 }
 
 export default createHtml;
