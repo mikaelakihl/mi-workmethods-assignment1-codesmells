@@ -1,4 +1,5 @@
 G
+
 - [ ] Få projektet att funka
 - [ ] CSS till Sass
 - [ ] Enhetlig namngivning i CSS:en
@@ -12,8 +13,9 @@ G
 - [ ] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
-  
+
 VG
+
 - [ ] Rätt sak på rätt plats
 - [ ] Hantera loggning på ett effektivt sätt
 - [ ] Gör en tillgänglighetsgranskning av sidan
