@@ -29,7 +29,7 @@ export async function createHtml() {  // skriver ut innehållet i main
     
       const podcastsHtml =`
         <article class="section_article_innerarticle">
-        <img src="${podcast.socialimage}" width="100" height="100">
+        <img src="${podcast.socialimage}" width="100" height="100" alt="podcast omslag">
           <div class="section_article_div">
             <h2>${podcast.name}</h2>
             <p>${podcast.description}</p>
