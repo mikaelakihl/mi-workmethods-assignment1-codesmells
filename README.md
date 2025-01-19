@@ -1,28 +1,58 @@
-G
+# SR Humorprogram
 
-- [x] Få projektet att funka
-- [x] CSS till Sass
-- [x] Enhetlig namngivning i CSS:en
-- [x] Konvertera till TypeScript
-- [x] Enhetlig kodkvalitet
-- [x] Mobilvyn
-- [x] Språk
-- [x] Rensa loggning
-- [ ] Dokumentation
-- [ ] Tillgänglighet (bilder)
-- [ ] Refaktorera funktioner
-- [ ] Eliminera onödig kod
-- [ ] Rensa bort kod som inte ska sättas
+This project was developed by a teacher at Medieinstitutet. 
 
-VG
+The aim for us students was to fix the smelly code and make the program work.
 
-- [ ] Rätt sak på rätt plats
-- [ ] Hantera loggning på ett effektivt sätt
-- [ ] Gör en tillgänglighetsgranskning av sidan
-- [ ] Utnyttja features i Sass i CSS:en
-- [ ] Rensa bort paket som inte används
-- [ ] Hantera fel i API-anropet
-- [ ] Gör en Lighthouse-analys
-- [ ] Läs av utvecklingsmiljön
-- [ ] Enhetlig syntax i CSS:en
-- [ ] Publicera sidan på GitHub pages
+Its a list of funny radio programs and it includes pod cover, heading and description.
+Every pod contains a direct link to "Sveriges Radio" where you'll be able to listen to the episode you want. 
+The page is available in light and dark mode.
+
+
+## Requirements for this assigment
+
+- Make the project work
+- Conver CSS to Sass
+- Consistent naming in CSS
+- Convert project to TypeScript
+- Consistent code quality
+- Fix mobileview
+- Change language
+- Clear logging
+- Dokumentation
+- Add alt texts to images due to a11y
+- Refactor functions
+- Eliminate unnessacary code
+- Clear code (tabindex)
+
+
+## Live published site
+
+[Click here for live published version](link)
+
+**Language: Swedish**
+
+
+## Screenshots
+
+![App Screenshot](src/assets/humorprogram_light.png)
+![App Screenshot](src/assets/humorprogram_dark.png)
+
+## Tech Stack
+
+**HTML** | **JavaScript** | **TypeScript** | **SCSS** | **Prettier** | **EsLint** | **Vite**
+
+
+## Validation & a11y
+
+### HTML
+
+![Se bilden här](assets/reports/html_validation.png)
+
+### CSS 
+
+![Se bilden här](assets/reports/css_validation-1.png)
+
+### Lighthouse Analyze
+
+![Se bilden här](assets/reports/lighthouse_report-1.png)

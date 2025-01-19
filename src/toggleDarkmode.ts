@@ -7,7 +7,6 @@ export function toggleLightMode() {
 
   if (document.body.classList.contains('darkmode')) {
     toggleLightModeButton!.innerHTML = 'Välj mörkt läge';
-
   } else {
     toggleLightModeButton!.innerHTML = 'Välj ljust läge';
   }
