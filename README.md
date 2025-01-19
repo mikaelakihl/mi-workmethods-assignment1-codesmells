@@ -30,7 +30,7 @@ The page is available in light and dark mode.
 
 [Click here for live published version](link)
 
-**Language: Swedish**
+**Language: Swediish**
 
 
 ## Screenshots
