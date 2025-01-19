@@ -9,58 +9,78 @@ export async function createHtml() {  // skriver ut innehållet i main
   // -------För varje podcast kommer "den här koden" att köras------/
   podCasts.programs.forEach((podcast: { programurl: string; socialimage: string; description: string; name: string; }) => {
     
-    const innerArticle = createInnerArticle(); //Skriver ut hela artikeln för varje podcast
+    // const innerArticle = createInnerArticle(); //Skriver ut hela artikeln för varje podcast
 
-    createImg();
+    // createImg();
 
-    const textDiv = createTextDiv(); // skriver ut text beskrivningen för podcasten
+    // const textDiv = createTextDiv(); // skriver ut text beskrivningen för podcasten
 
-    createHeader();
-    createP();
-    createLink();
+    // createHeader();
+    // createP();
+    // createLink();
 
-    function createInnerArticle() { 
-      const innerArticle = document.createElement('article');
-      innerArticle.setAttribute('class', 'section_article_innerarticle');
-      podCastContainer!.appendChild(innerArticle);
-      return innerArticle;
-    }
+    
+      const podcastsHtml =`
+        <article class="section_article_innerarticle">
+        <img src="${podcast.socialimage}" width="100" height="100">
+          <div class="section_article_div">
+            <h2>${podcast.name}</h2>
+            <p>${podcast.description}</p>
+            <a href="${podcast.programurl}">Lyssna här</a>
+          </div>
+        </article>
+      
+      `;
+      
 
-    function createTextDiv() {
-      const textDiv = document.createElement('div');
-      textDiv.setAttribute('class', 'section_article_div');
-      innerArticle.appendChild(textDiv);
-      return textDiv;
-    }
+    podCastContainer!.innerHTML += podcastsHtml;
 
-    function createLink() {
-      const linkPlacement = document.createElement('a');
-      const linkText = document.createTextNode('Lyssna här');
-      linkPlacement.setAttribute('href', podcast.programurl);
-      linkPlacement.appendChild(linkText);
-      textDiv.appendChild(linkPlacement);
-    }
-    function createImg() {
-      const imgPlacement = document.createElement('IMG');
-      imgPlacement.setAttribute('src', podcast.socialimage);
-      imgPlacement.setAttribute('width', '100');
-      imgPlacement.setAttribute('height', '100');
-      innerArticle.appendChild(imgPlacement);
-    }
+    
 
-    function createP() {
-      const descPlacement = document.createElement('p');
-      const desc = document.createTextNode(podcast.description);
-      descPlacement.appendChild(desc);
-      textDiv.appendChild(descPlacement);
-    }
+    // createPodCastsAndInformation();
 
-    function createHeader() {
-      const headerPlacement = document.createElement('h2');
-      const programName = document.createTextNode(podcast.name);
-      headerPlacement.appendChild(programName);
-      textDiv.appendChild(headerPlacement);
-    }
+    // function createInnerArticle() { 
+    //   const innerArticle = document.createElement('article');
+    //   innerArticle.setAttribute('class', 'section_article_innerarticle');
+    //   podCastContainer!.appendChild(innerArticle);
+    //   return innerArticle;
+    // }
+
+    // function createTextDiv() {
+    //   const textDiv = document.createElement('div');
+    //   textDiv.setAttribute('class', 'section_article_div');
+    //   innerArticle.appendChild(textDiv);
+    //   return textDiv;
+    // }
+
+    // function createLink() {
+    //   const linkPlacement = document.createElement('a');
+    //   const linkText = document.createTextNode('Lyssna här');
+    //   linkPlacement.setAttribute('href', podcast.programurl);
+    //   linkPlacement.appendChild(linkText);
+    //   textDiv.appendChild(linkPlacement);
+    // }
+    // function createImg() {
+    //   const imgPlacement = document.createElement('IMG');
+    //   imgPlacement.setAttribute('src', podcast.socialimage);
+    //   imgPlacement.setAttribute('width', '100');
+    //   imgPlacement.setAttribute('height', '100');
+    //   innerArticle.appendChild(imgPlacement);
+    // }
+
+    // function createP() {
+    //   const descPlacement = document.createElement('p');
+    //   const desc = document.createTextNode(podcast.description);
+    //   descPlacement.appendChild(desc);
+    //   textDiv.appendChild(descPlacement);
+    // }
+
+    // function createHeader() {
+    //   const headerPlacement = document.createElement('h2');
+    //   const programName = document.createTextNode(podcast.name);
+    //   headerPlacement.appendChild(programName);
+    //   textDiv.appendChild(headerPlacement);
+    // }
   });
   
 }
