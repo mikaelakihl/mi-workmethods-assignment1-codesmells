@@ -1,26 +1,27 @@
 import { getPodcasts } from './api';
 
-const podCastContainer = document.querySelector('.section_podlist_pods');
+const podCastContainer = document.querySelector('.section_podlist_pods'); // main innehåll container
 
 
-export async function createHtml() {
-  const podCasts = await getPodcasts();
+export async function createHtml() {  // skriver ut innehållet i main 
+  const podCasts = await getPodcasts();  // Hämtar podcasts från api 
+
+  // -------För varje podcast kommer "den här koden" att köras------/
   podCasts.programs.forEach((podcast: { programurl: string; socialimage: string; description: string; name: string; }) => {
     
-    const innerArticle = createInnerArticle();
+    const innerArticle = createInnerArticle(); //Skriver ut hela artikeln för varje podcast
 
     createImg();
 
-    const textDiv = createTextDiv();
+    const textDiv = createTextDiv(); // skriver ut text beskrivningen för podcasten
 
     createHeader();
     createP();
     createLink();
 
-    function createInnerArticle() {
+    function createInnerArticle() { 
       const innerArticle = document.createElement('article');
       innerArticle.setAttribute('class', 'section_article_innerarticle');
-      innerArticle.setAttribute('tabindex', '1');
       podCastContainer!.appendChild(innerArticle);
       return innerArticle;
     }
@@ -36,7 +37,6 @@ export async function createHtml() {
       const linkPlacement = document.createElement('a');
       const linkText = document.createTextNode('Lyssna här');
       linkPlacement.setAttribute('href', podcast.programurl);
-      linkPlacement.setAttribute('tabindex', '1');
       linkPlacement.appendChild(linkText);
       textDiv.appendChild(linkPlacement);
     }
