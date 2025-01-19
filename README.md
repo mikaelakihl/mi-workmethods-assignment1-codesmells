@@ -9,8 +9,8 @@ G
 - [x] Språk
 - [x] Rensa loggning
 - [ ] Dokumentation
-- [ ] Tillgänglighet (bilder)
-- [ ] Refaktorera funktioner
+- [x] Tillgänglighet (bilder)
+- [x] Refaktorera funktioner
 - [ ] Eliminera onödig kod
 - [ ] Rensa bort kod som inte ska sättas
 
