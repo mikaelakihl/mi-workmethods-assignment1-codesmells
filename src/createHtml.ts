@@ -3,7 +3,6 @@ import { getPodcasts } from './api';
 const podCastContainer = document.querySelector('.section_podlist_pods');
 
 export async function createHtml() {
-
   const podCasts = await getPodcasts();
 
   type Podcasttype = {
