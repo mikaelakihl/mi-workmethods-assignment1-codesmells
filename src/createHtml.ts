@@ -6,8 +6,15 @@ const podCastContainer = document.querySelector('.section_podlist_pods'); // mai
 export async function createHtml() {  // skriver ut innehållet i main 
   const podCasts = await getPodcasts();  // Hämtar podcasts från api 
 
+  type Podcasttype = {
+    programurl: string; 
+    socialimage: string; 
+    description: string; 
+    name: string;
+  };
+
   // -------För varje podcast kommer "den här koden" att köras------/
-  podCasts.programs.forEach((podcast: { programurl: string; socialimage: string; description: string; name: string; }) => {
+  podCasts.programs.forEach((podcast: Podcasttype) => {
     
     // const innerArticle = createInnerArticle(); //Skriver ut hela artikeln för varje podcast
 
