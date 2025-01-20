@@ -43,16 +43,6 @@ The page is available in light and dark mode.
 **HTML** | **JavaScript** | **TypeScript** | **SCSS** | **Prettier** | **EsLint** | **Vite**
 
 
-## Validation & a11y
-
-### HTML
-
-![Se bilden här](assets/reports/html_validation.png)
-
-### CSS 
-
-![Se bilden här](assets/reports/css_validation-1.png)
-
 ### Lighthouse Analyze
 
-![Se bilden här](assets/reports/lighthouse_report-1.png)
+![Se bilden här](src/assets/doc_lighthouse_analyze.png)

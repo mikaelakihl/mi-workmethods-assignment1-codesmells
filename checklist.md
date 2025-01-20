@@ -8,7 +8,7 @@ G
 - [x] Mobilvyn
 - [x] Språk
 - [x] Rensa loggning
-- [ ] Dokumentation
+- [x] Dokumentation
 - [x] Tillgänglighet (bilder)
 - [x] Refaktorera funktioner
 - [x] Eliminera onödig kod
@@ -22,7 +22,7 @@ VG
 - [ ] Utnyttja features i Sass i CSS:en
 - [ ] Rensa bort paket som inte används
 - [ ] Hantera fel i API-anropet
-- [ ] Gör en Lighthouse-analys
+- [x] Gör en Lighthouse-analys
 - [ ] Läs av utvecklingsmiljön
 - [ ] Enhetlig syntax i CSS:en
 - [ ] Publicera sidan på GitHub pages
