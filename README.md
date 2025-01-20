@@ -8,8 +8,7 @@ Its a list of funny radio programs and it includes pod cover, heading and descri
 Every pod contains a direct link to "Sveriges Radio" where you'll be able to listen to the episode you want. 
 The page is available in light and dark mode.
 
-
-## Requirements for this assigment
+### Requirements for this assigment
 
 - Make the project work
 - Conver CSS to Sass
@@ -25,13 +24,11 @@ The page is available in light and dark mode.
 - Eliminate unnessacary code
 - Clear code (tabindex)
 
-
 ## Live published site
 
 [Click here for live published version](link)
 
 **Language: Swediish**
-
 
 ## Screenshots
 
@@ -41,6 +38,39 @@ The page is available in light and dark mode.
 ## Tech Stack
 
 **HTML** | **JavaScript** | **TypeScript** | **SCSS** | **Prettier** | **EsLint** | **Vite**
+
+## Install project
+
+### Prerequisites
+To run the project locally, you need the following tools installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- A modern browser (Chrome, Firefox, Edge)
+
+### Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/username/project-name.git
+
+2. Navigate into the project directory:
+
+    ```bash
+   cd project-name
+
+3. Install dependencies via npm:
+
+    ```bash
+   npm install
+
+4. Start the development server:
+
+    ```bash
+   npm run dev
 
 
 ### Lighthouse Analyze
