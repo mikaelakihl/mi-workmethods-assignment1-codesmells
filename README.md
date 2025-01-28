@@ -1,11 +1,11 @@
 # SR Humorprogram
 
-This project was developed by a teacher at Medieinstitutet. 
+This project was developed by a teacher at Medieinstitutet.
 
 The aim for us students was to fix the smelly code and make the program work.
 
 Its a list of funny radio programs and it includes pod cover, heading and description.
-Every pod contains a direct link to "Sveriges Radio" where you'll be able to listen to the episode you want. 
+Every pod contains a direct link to "Sveriges Radio" where you'll be able to listen to the episode you want.
 The page is available in light and dark mode.
 
 ### Requirements for this assigment
@@ -42,6 +42,7 @@ The page is available in light and dark mode.
 ## Install project
 
 ### Prerequisites
+
 To run the project locally, you need the following tools installed:
 
 - [Node.js](https://nodejs.org/)
@@ -57,21 +58,27 @@ Follow these steps to set up the project on your local machine:
    ```bash
    git clone https://github.com/username/project-name.git
 
+   ```
+
 2. Navigate into the project directory:
 
-    ```bash
+   ```bash
    cd project-name
+
+   ```
 
 3. Install dependencies via npm:
 
-    ```bash
+   ```bash
    npm install
+
+   ```
 
 4. Start the development server:
 
-    ```bash
+   ```bash
    npm run dev
-
+   ```
 
 ### Lighthouse Analyze
 
