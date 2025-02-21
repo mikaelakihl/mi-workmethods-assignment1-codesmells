@@ -26,7 +26,7 @@ The page is available in light and dark mode.
 
 ## Live published site
 
-[Click here for live published version](link)
+[Click here for live published version](https://mikaelakihl.github.io/mi-workmethods-assignment1-codesmells/)
 
 **Language: Swediish**
 
